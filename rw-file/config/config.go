@@ -20,3 +20,5 @@ var Info = []types.Website{
 		},
 	},
 }
+
+var Str string = "http://c.biancheng.net/golang/\n" // \n\r表示换行  txt文件要看到换行效果要用 \r\n

@@ -13,4 +13,7 @@ func main() {
 
 	api.HandleGobW()
 	api.HandleGobR()
+
+	api.HandleTextW()
+	api.HandleTextR()
 }

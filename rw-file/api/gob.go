@@ -10,8 +10,10 @@ import (
 )
 
 func HandleGobW() {
+	var fileName string = "./files/f-gob.gob"
+
 	// 创建文件
-	filePtr, err := os.OpenFile("./files/f-gob.gob", os.O_RDWR|os.O_CREATE, 0777)
+	filePtr, err := os.OpenFile(fileName, os.O_RDWR|os.O_CREATE, 0777)
 	if err != nil {
 		fmt.Println("创建gob文件失败", err.Error())
 		return
@@ -29,8 +31,10 @@ func HandleGobW() {
 }
 
 func HandleGobR() {
+	var fileName string = "./files/f-gob.gob"
+
 	// 打开文件
-	filePtr, err := os.Open("files/f-gob.gob")
+	filePtr, err := os.Open(fileName)
 	if err != nil {
 		fmt.Println("打开gob文件失败", err.Error())
 		return

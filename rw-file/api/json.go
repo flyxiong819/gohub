@@ -10,9 +10,10 @@ import (
 )
 
 func HandleJsonW() {
+	var fileName string = "./files/f-json.json"
 
 	// 创建文件
-	filePtr, err := os.Create("./files/f-json.json")
+	filePtr, err := os.Create(fileName)
 	if err != nil {
 		fmt.Println("创建json文件失败", err.Error())
 		return
@@ -30,8 +31,10 @@ func HandleJsonW() {
 }
 
 func HandleJsonR() {
+	var fileName string = "./files/f-json.json"
+
 	// 打开文件
-	filePtr, err := os.Open("./files/f-json.json")
+	filePtr, err := os.Open(fileName)
 	if err != nil {
 		fmt.Println("打开json文件失败", err.Error())
 		return

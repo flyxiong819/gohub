@@ -9,8 +9,10 @@ import (
 )
 
 func HandleXmlW() {
+	var fileName string = "./files/f-xml.xml"
+
 	// 创建文件
-	filePtr, err := os.Create("./files/f-xml.xml")
+	filePtr, err := os.Create(fileName)
 	if err != nil {
 		fmt.Println("XML创建文件失败", err.Error())
 		return
@@ -28,8 +30,10 @@ func HandleXmlW() {
 }
 
 func HandleXmlR() {
+	var fileName string = "./files/f-xml.xml"
+
 	// 打开文件
-	filePtr, err := os.Open("./files/f-xml.xml")
+	filePtr, err := os.Open(fileName)
 	if err != nil {
 		fmt.Println("XML打开失败", err.Error())
 		return
