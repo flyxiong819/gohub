@@ -5,3 +5,7 @@ type Website struct {
 	Url    string
 	Course []string
 }
+
+type Website2 struct {
+	Url int32
+}

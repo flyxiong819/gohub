@@ -16,4 +16,13 @@ func main() {
 
 	api.HandleTextW()
 	api.HandleTextR()
+
+	api.HandleBinaryW()
+	api.HandleBinaryR()
+
+	api.HandleZipW()
+	api.HandleZipR()
+
+	api.HandleTarW()
+	api.HandleTarR()
 }
